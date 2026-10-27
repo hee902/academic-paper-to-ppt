@@ -1,0 +1,21 @@
+{
+  "inheritedBaseline": "v2.2.0-dual-paper-baseline.1",
+  "preservedFailures": [
+    "MinerU born-digital table column fidelity",
+    "Upstream small-canvas scientific preview clipping",
+    "academic-pptx license conflict: disabled"
+  ],
+  "notBundled": [
+    "MinerU",
+    "Guizang",
+    "academic-pptx"
+  ],
+  "notValidatedResearchTypes": [
+    "SEM",
+    "Meta-analysis",
+    "qualitative",
+    "experimental"
+  ],
+  "noPaidApi": true,
+  "noPaperUpload": true
+}

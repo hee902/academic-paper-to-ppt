@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Paper to PPT"
+  short_description: "按研究类型组织论文证据，生成可编辑报告并实查PowerPoint输出"
+  default_prompt: "请使用 $academic-paper-to-ppt，依据项目默认参数及论文实际研究类型规划正式学术报告，核验全文证据并交付可编辑PPTX与实际渲染审查。"

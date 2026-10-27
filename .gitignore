@@ -1,0 +1,11 @@
+.runtime/
+.venv*/
+node_modules/
+**/__pycache__/
+work/
+output/
+.cache/
+*.pdf
+*.pptx
+*.png
+*.log

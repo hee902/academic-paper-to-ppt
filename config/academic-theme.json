@@ -1,0 +1,18 @@
+{
+  "id": "modern-scientific-editorial-v1.1",
+  "designSystem": "modern-scientific-editorial",
+  "designSystemReference": "design-system.md",
+  "layoutCompiler": "scripts/studio_core/editorial.py",
+  "slideWidthInches": 13.333333,
+  "slideHeightInches": 7.5,
+  "previewWidth": 1600,
+  "previewHeight": 900,
+  "colors": {"background": "FFFFFF", "primary": "173E37", "accent": "2C6B59", "text": "173E37", "muted": "52675F"},
+  "editorialColors": {"paper":"F5F3EC","white":"FFFFFF","ink":"173E37","muted":"52675F","green":"2C6B59","gold":"E6CA84","dark":"102F2A","light":"B9CEC4","rule":"CBD5CE"},
+  "editorialFonts": {"cn":"Microsoft YaHei","en":"Arial","serif":"Georgia"},
+  "editorialTypeScale": {"12":12,"13":13,"14":14,"16":16,"17":17,"18":18,"18.5":18.5,"19":19,"20":20,"21":21,"22":22,"23":23,"24":24,"25":25,"26":26,"27":27,"28":28,"30":30,"31":31,"32":32,"33":33,"35":35,"36":36,"39":39,"42":42,"43":43,"45":45,"46":46,"64":64,"67":67},
+  "fontSizes": {"cover": 36, "title": 30, "body": 22, "caption": 14},
+  "minimumFontSizes": {"cover": 32, "title": 28, "body": 20, "caption": 12},
+  "contentMarginsInches": [0.65, 0.5, 0.65, 0.45],
+  "principles": ["One evidence-backed takeaway per slide", "Original quantitative figures retain labels, uncertainty and units", "Vary meaningful layouts; no repeated decorative card grids", "Native text and charts; original images when fidelity cannot be reproduced"]
+}

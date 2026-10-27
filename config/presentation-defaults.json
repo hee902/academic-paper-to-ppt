@@ -1,0 +1,21 @@
+{
+  "language": "zh-CN",
+  "durationMinutes": 17,
+  "slideCount": 14,
+  "aspectRatio": "16:9",
+  "style": "正式学术会议",
+  "preferredOutput": "editable-pptx",
+  "font": "Microsoft YaHei",
+  "externalServices": "require-explicit-approval",
+  "outputRoot": "work",
+  "schemaVersion": "2.0",
+  "productionSlideRange": [12, 16],
+  "productionMinuteRange": [15, 20],
+  "supportedLanguages": ["zh-CN", "en-US"],
+  "englishFont": "Arial",
+  "parser": "auto",
+  "designEngine": "baoyu-design-guided",
+  "pptxEngine": "pptxgenjs",
+  "maxLayoutRepairAttempts": 2,
+  "purpose": "production"
+}

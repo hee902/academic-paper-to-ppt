@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "note": "Evidence-based Codex classification, not keyword certification or a fixed slide sequence. Mixed designs may select secondary types. Missing information stays not-reported.",
+  "profiles": {
+    "experimental": {
+      "label": "实验研究",
+      "checks": ["allocation-and-controls", "experimental-unit-and-replication", "outcomes-and-timepoints", "attrition-and-uncertainty"],
+      "narrativePriorities": ["scientific question", "design and identification", "primary result", "mechanism and limits"],
+      "visualTasks": ["process", "original-figure", "statistical-interval", "evidence-matrix"]
+    },
+    "cross-sectional": {
+      "label": "横断面调查与回归",
+      "checks": ["sampling-and-denominator", "measurement-and-missingness", "confounding-and-model", "association-not-causation"],
+      "narrativePriorities": ["population and question", "measurement", "association and robustness", "selection and external validity"],
+      "visualTasks": ["study-overview", "process", "original-figure", "evidence-matrix"]
+    },
+    "structural-equation": {
+      "label": "结构方程模型",
+      "checks": ["latent-and-observed-variables", "measurement-validity", "identification-and-fit", "paths-and-uncertainty"],
+      "narrativePriorities": ["constructs and hypotheses", "measurement model", "structural paths", "fit and alternative explanations"],
+      "visualTasks": ["study-overview", "original-figure", "evidence-matrix", "statistical-interval"]
+    },
+    "spatial-gis": {
+      "label": "空间分析与GIS",
+      "checks": ["spatial-unit-crs-and-scale", "data-coverage-and-resolution", "spatial-dependence", "modifiable-units-and-uncertainty"],
+      "narrativePriorities": ["spatial question", "data geography and scale", "spatial pattern", "dependence and transferability"],
+      "visualTasks": ["original-figure", "study-overview", "process", "evidence-matrix"]
+    },
+    "qualitative": {
+      "label": "定性访谈研究",
+      "checks": ["recruitment-and-context", "coding-and-reflexivity", "themes-and-negative-cases", "quotation-context-and-anonymity"],
+      "narrativePriorities": ["context and question", "participants and analytic position", "themes with source quotations", "interpretation and transferability"],
+      "visualTasks": ["argument", "evidence-matrix", "study-overview", "process"]
+    },
+    "systematic-review-meta": {
+      "label": "系统综述与Meta分析",
+      "checks": ["search-date-and-eligibility", "study-selection-and-bias", "effect-metric-and-pooling", "heterogeneity-and-publication-bias"],
+      "narrativePriorities": ["review question", "selection and risk of bias", "synthesis and heterogeneity", "certainty and applicability"],
+      "visualTasks": ["process", "original-figure", "statistical-interval", "evidence-matrix"]
+    },
+    "theoretical-methodological": {
+      "label": "理论与方法学论文",
+      "checks": ["problem-and-assumptions", "derivation-and-propositions", "validation-or-counterexample", "domain-and-boundary-conditions"],
+      "narrativePriorities": ["unresolved problem", "assumptions and construction", "proposition or benchmark", "scope and failure cases"],
+      "visualTasks": ["argument", "process", "original-figure", "evidence-matrix"]
+    }
+  }
+}

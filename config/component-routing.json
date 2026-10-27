@@ -1,0 +1,9 @@
+{
+  "parser": "Docling native",
+  "design": "bundled MIT Baoyu deck-stage and licensed guides",
+  "pptx": "PptxGenJS 4.0.1",
+  "render": "installed Windows PowerPoint COM",
+  "paidApis": false,
+  "remoteParsing": false,
+  "optionalOcr": "explicitly configured MinerU, not bundled"
+}

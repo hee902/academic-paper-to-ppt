@@ -1,0 +1,19 @@
+{
+  "version": "2.0-generalized-editorial",
+  "sourceCaptionMaxCharacters": 64,
+  "sourceCaptionMaxLocators": 4,
+  "figureMinAreaFraction": 0.12,
+  "figureMinShortSideInches": 2.0,
+  "calculationDiagramReferenceTextMinPt": 18,
+  "percentTokenRowToleranceFactor": 0.7,
+  "conclusionRecommendedMinSeconds": 60,
+  "hanCharactersPerSecondReviewThreshold": 4.0,
+  "englishWordsPerMinuteReviewThreshold": 190,
+  "maximumSlideSecondsBeforeReview": 150,
+  "slideTextCharacterReviewThreshold": 420,
+  "contentOccupancyReviewRange": [0.12, 0.82],
+  "dominantLayoutReviewFraction": 0.45,
+  "renderTextOverflowTolerancePt": 3,
+  "fontAliases": {"Microsoft YaHei": ["MicrosoftYaHei", "MicrosoftYaHei-Bold"], "Arial": ["ArialMT", "Arial-BoldMT", "Arial"], "Georgia": ["Georgia", "Georgia-Italic", "Georgia-Bold"]},
+  "note": "Engineering screens, not universal aesthetic or speaking-speed guarantees. Actual PowerPoint images and evidence require substantive review."
+}

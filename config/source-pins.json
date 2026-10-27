@@ -1,0 +1,17 @@
+[
+  {
+    "repo": "docling-project/docling",
+    "commit": "6470556ddb6ee9c1dcdb3ac680e7fe11cab62bda",
+    "branch": "main"
+  },
+  {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "commit": "593377bb048752abb0152deab9fbb1083a6087df",
+    "branch": "main"
+  },
+  {
+    "repo": "JimLiu/baoyu-design",
+    "commit": "6530033592bf7fa58bc1a5a2a2ad278da45213a9",
+    "branch": "main"
+  }
+]
