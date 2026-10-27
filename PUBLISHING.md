@@ -1,16 +1,26 @@
-# GitHub私有准备与公开停止条件
+# v0.1.0 发布、核验与回退
 
-2026-10-27授权仅限账户`hee902`下的私有仓库`academic-paper-to-ppt`、源码推送、`v0.1.0`标签和Release草稿。**不得公开仓库，不得正式发布Release。** 下列公开步骤只有再次明确授权后才可执行。
+本文件面向维护者。所有者于2026-10-27明确授权仅对 `hee902/academic-paper-to-ppt` 公开仓库并发布首个稳定版 `v0.1.0`。此前私有准备和标签暂缓记录是历史，不构成其他仓库、后续版本或扩大的账户权限授权。
 
-只使用本仓库目录，不上传其父目录或私有验证工作区。先查看LICENSE、THIRD_PARTY_NOTICES、release-validation-report和发行SHA256SUMS。
+## 发布前门禁
 
-1. 私有准备：创建空的**Private**仓库，不预填重复README/LICENSE，确认owner为hee902；已有仓库先核对身份、可见性与内容，不覆盖无关工作。
-2. 在本仓库目录执行`git init`，先用`git status --short`检查文件列表，再提交。按GitHub提供的真实remote URL连接并推送；本文不虚构地址，也不代替授权。
-3. 为审查后的提交创建固定tag `v0.1.0`并推送tag。锁文件和清单纳入Git，依赖目录不纳入。
-4. 在GitHub Releases创建**草稿**，选择tag，标题标注首个可移植发行候选。附件仅`academic-paper-to-ppt-skill-v0.1.0.zip`和`SHA256SUMS.txt`；验证报告保留在源码中，不上传论文、测试产物或本地审计。
-5. 下载GitHub附件并核对哈希，核对远程提交的全部清单文件和根SKILL.md；确认仓库仍为Private、Release仍为Draft。完成即停止，等待所有者下一次明确授权。GitHub自动源码ZIP与发行ZIP的哈希不同，不要混用。
-6. 仓库地址确定后可填写真实链接；README或其他清单文件的任何变化都必须重新生成包清单、重新打包/核对SHA并执行受影响验证，再为该确切提交建立tag。不要在测试包与tag之间悄悄改文档。保留验证日期/范围；新增平台必须补实际测试。
+1. 只在独立发行工作区维护本仓库；内部V2.2正式基线及生产环境保持不变。不上传工作区父目录、私人论文、数据、成稿、讲稿、本地审计、凭据、运行时或缓存。
+2. 审查LICENSE、THIRD_PARTY_NOTICES、锁文件、根SKILL.md、安装器和有日期的验证记录。保留未验证平台/研究类型及原图编辑边界，不把稳定发行状态当作科学能力认证。
+3. 文档修改后重新生成package-manifest.json、ZIP和SHA256SUMS.txt，核对95文件与清单、独立安装、Codex识别、受影响回归及公开发布扫描。任何失败先停止，不接受旧ZIP或旧摘要。
+4. 检查全部分支、标签、可达提交和历史文件；作者/提交者使用GitHub noreply，许可归属信息保留。未授权公开的个人信息或服务器残留引用未处理前不公开。改写分支不等于服务器旧提交已清除，旧视图需单独检查。
+5. 冻结确切提交、树、ZIP和摘要；提交及tag须绑定同一载荷。已有仓库不重新初始化，不覆盖无关更改；只使用经授权的本仓库最小权限认证，不把凭据写入源码、日志或remote URL。
 
-GitHub Code ZIP可按INSTALLATION安装；源码新增/修改清单文件后应重新生成验证候选，推荐固定Release。参见[Codex官方Skills说明](https://developers.openai.com/codex/skills/)和[GitHub官方Release文档](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)。
+## 正式发布
 
-更新先安装到新项目并验证，不覆盖旧Skill或生产输出。保留旧ZIP和校验值作回退。本包不触碰内部双论文基线。
+1. 所有发布前门禁通过后，为冻结提交建立真实tag `v0.1.0`，核对其解析出的完整提交SHA。不能只在草稿中填写版本名称就声称标签存在。
+2. 通过所有者已授权的操作将本仓库改为Public。若发现阻断，保持Private；不要以公开后再删敏感历史作为修复方案。
+3. 更新已有Release草稿，选择真实tag，标题和说明使用稳定发行状态。附件仅 `academic-paper-to-ppt-skill-v0.1.0.zip` 和 `SHA256SUMS.txt`。重新核对服务器摘要后再发布，稳定版不标Pre-release。
+4. 使用不带账户凭据的请求检查仓库、README、正式Release及两份附件可访问；下载后重新计算SHA-256。GitHub自动Source code ZIP与发行ZIP不能混用摘要。
+5. 从公开固定版本在全新项目安装；核对清单、Codex名称/描述、依赖检查与实际合法公开论文的A–F、PowerPoint PDF/PNG、Notes和逐页审阅。新测试使用新运行，不拿前序成功产物代替。
+6. 公开安装或制作测试失败须立即记录实际状态、影响与修复办法；不要宣称全部通过。维护者验收报告和用户本地论文输出留在发行源码外。
+
+## 版本与回退
+
+保留先前ZIP、摘要和已验证提交。更新先安装到新项目，拒绝覆盖既有Skill或论文输出。已经发布的v0.1.0不静默移动tag或替换为不同载荷；需要后续版本时另获授权。回退使用已封存的确切版本，不触碰内部双论文基线。
+
+参见[GitHub Release文档](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)和[Codex Skills说明](https://developers.openai.com/codex/skills/)。

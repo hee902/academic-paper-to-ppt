@@ -2,9 +2,9 @@
 
 将完整学术论文转为有证据索引、自然讲稿和实际渲染审阅的可编辑学术汇报。主要设计体系为 **Modern Scientific Editorial**，默认中文、约17分钟、约14页、16:9；按论文内容组织，不套固定目录。
 
-发行候选 **v0.1.0** 来自已完成双论文验收的内部V2.2基线，版本号表示首次独立安装包，不代表核心功能降级。本地发行验证的实际范围、失败修复和未测试项目以[发行验证报告](release-validation-report.md)为准；内部两篇验收不能替代新环境测试。
+**v0.1.0** 是首个独立稳定发行版本，来自已完成双论文验收的内部V2.2基线，版本号表示首次独立安装包，不代表核心功能降级。实际验证范围、失败修复和未测试项目以有日期的[发行验证报告](release-validation-report.md)及Release验收记录为准；内部两篇验收不能替代新环境测试。
 
-仓库目标：[hee902/academic-paper-to-ppt](https://github.com/hee902/academic-paper-to-ppt)。本轮只授权**私有仓库与Release草稿准备**，不是公开发布；访问、下载和克隆需要该私有仓库权限。草稿附件供仓库所有者审核，未正式发布的Release不应当作公开下载入口。
+官方仓库：[hee902/academic-paper-to-ppt](https://github.com/hee902/academic-paper-to-ppt)。固定版本从[v0.1.0 Release](https://github.com/hee902/academic-paper-to-ppt/releases/tag/v0.1.0)下载；正式发布的公开附件无需GitHub登录。请同时下载Skill ZIP和SHA256SUMS.txt，并核对SHA-256；GitHub自动生成的Source code ZIP与发行附件不是同一文件。
 
 ## 能做什么
 
@@ -24,7 +24,7 @@ Python/Node/Codex/Office由用户预先准备，本包不下载安装这些系�
 
 ## 安装
 
-完整步骤与授权边界见[INSTALLATION.md](INSTALLATION.md)。有仓库权限的用户可在GitHub登录后下载源码ZIP；仓库所有者可审核Release草稿中的`academic-paper-to-ppt-skill-v0.1.0.zip`和`SHA256SUMS.txt`。核对SHA-256后解压，不将草稿描述成正式发布的版本。
+完整步骤与授权边界见[INSTALLATION.md](INSTALLATION.md)。从正式Release下载`academic-paper-to-ppt-skill-v0.1.0.zip`和`SHA256SUMS.txt`，核对SHA-256后解压。发行ZIP内的顶层`academic-paper-to-ppt`目录包含完整Skill；维护中的main不代替固定版本。
 
 在解压后包含`SKILL.md`的`academic-paper-to-ppt`目录运行（将项目路径换成自己的目录）：
 
@@ -40,7 +40,7 @@ py -3.12 "$paperSkill/scripts/setup.py" --install --allow-downloads
 
 手动方式：将完整`academic-paper-to-ppt`文件夹复制到工作项目`.agents/skills/`，保留SKILL.md、scripts、config、references、third_party及锁文件，再配置运行时。用户级安装须显式使用`--user`，它写入用户的`.agents/skills`；默认不进行用户级安装。[Codex官方说明](https://developers.openai.com/codex/skills/)介绍Skills发现和调用。
 
-也可让`$skill-installer`使用`--repo hee902/academic-paper-to-ppt --ref v0.1.0 --path . --name academic-paper-to-ppt --dest "<工作项目>/.agents/skills" --method download`，然后执行本包依赖检查。`--name`不可省略：根路径`.`不能自动推导合法Skill名。私有仓库下载必须先有授权的GitHub认证；浏览器登录不自动等于安装器已认证。没有安装器认证时优先使用登录后的浏览器ZIP下载方式，不把Token写入命令、README或Git remote。
+也可让`$skill-installer`使用`--repo hee902/academic-paper-to-ppt --ref v0.1.0 --path . --name academic-paper-to-ppt --dest "<工作项目>/.agents/skills" --method download`，然后执行本包依赖检查。`--name`不可省略：根路径`.`不能自动推导合法Skill名。公开下载不要求创建Token；遇到网络或请求额度问题时优先改用正式Release ZIP。只有另行访问私有仓库或需要认证额度时才使用已有授权凭据，不把Token写入命令、README或Git remote。
 
 ## 一条使用指令
 
@@ -71,4 +71,4 @@ py -3.12 "$paperSkill/scripts/setup.py" --install --allow-downloads
 
 自有代码/规范采用[MIT](LICENSE)，随包第三方文件按[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)及各自LICENSE。只带必要MIT文件，不带MinerU、Guizang、academic-pptx、Office或论文资源。依赖软件安装后各自许可证仍适用。
 
-本轮权限仅为私有仓库、`v0.1.0`标签及Release草稿准备，附件只包含Skill ZIP和校验清单。公开仓库或正式发布Release必须再次取得所有者明确授权。操作与停止条件见[PUBLISHING.md](PUBLISHING.md)及[GitHub官方Release文档](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)。
+正式发行附件只包含Skill ZIP和校验清单。维护者按[PUBLISHING.md](PUBLISHING.md)冻结确切提交、核对完整历史及附件，并在全新项目验证公开安装；任何后续版本或仓库权限变更均需另获所有者授权。稳定发行标签表示软件包的发行状态，不扩大科学、平台和现场演示的实际验证范围。

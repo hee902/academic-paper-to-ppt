@@ -1,6 +1,8 @@
 # Changelog
 
-## 0.1.0 — portable release candidate
+## 0.1.0 — first stable portable release
+
+- Prepare public Release documentation under the owner's 2026-10-27 v0.1.0 authorization. Keep actual platform/scientific limits, pinned dependencies and the frozen internal V2.2 baseline unchanged. Public download/install tests are recorded separately after they actually run.
 
 - Private preparation authorization (2026-10-27): document the intended hee902 repository, authenticated private-install options, and the mandatory stop before making the repository public or publishing a Release. Runtime code, platform scope and scientific gates are unchanged.
 
@@ -14,4 +16,4 @@
 - Final publication review: explicitly document root installation with --path . and --name academic-paper-to-ppt; test the official installer's root/validate/copy logic offline, including missing-name and overwrite rejection.
 - Complete a fresh 12-slide, Chinese production run of a CC BY software paper with actual PowerPoint PDF/PNG, all paired-image reviews, and text/shape edit-save-reopen checks. Timing is a 16m30s plan, not a measured rehearsal.
 
-Version0.1.0 labels the first portable package, not a downgrade of the V2.2 engine. No public repository or Release was created during local packaging.
+Version0.1.0 labels the first portable package, not a downgrade of the V2.2 engine. The earlier local packaging and private-preparation records remain dated historical evidence, not proof of public installation.
